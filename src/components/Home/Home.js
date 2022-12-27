@@ -28,7 +28,7 @@ useEffect(()=>{
         author:responseData[key].author,
         img:responseData[key].img,
         price:responseData[key].price,
-        amount:responseData[key].amount
+        amount:responseData[key].amount,
 
 
       });
