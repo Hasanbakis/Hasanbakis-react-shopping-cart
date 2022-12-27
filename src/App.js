@@ -10,6 +10,7 @@ const  App =() => {
   const [cart,setCart] = useState([])
   const [warning,setWarning] = useState(false);
   const [search,setSearch] = useState("");
+ 
 
   const handleSearch = (event) =>{
     setSearch(event.target.value)
@@ -64,7 +65,6 @@ const  App =() => {
       {
         show ? <Home item={search} handleClick={handleClick}/> : <Cart cart={cart} setCart={setCart} handleChange={handleChange}/>
       }
-      
       {
           warning && <div className="warning">Item is already added to your cart</div>
       }

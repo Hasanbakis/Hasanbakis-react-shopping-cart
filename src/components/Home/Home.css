@@ -2,6 +2,21 @@ body{
     background-color: white;
 }
 
+.loading p{
+    text-align: center;
+    color:skyblue;
+    font-size: 50px;
+    font-family: cursive;
+    
+}
+
+.error p{
+    text-align: center;
+    color:red;
+    font-size: 70px;
+    font-family: cursive;
+    
+}
 .warning{
     height: 50px;
     width: 300px;

@@ -4,6 +4,7 @@ import "./Cart.css";
 const Cart = ({ cart, setCart,handleChange }) => {
   const [price, setPrice] = useState(0);
 
+
   const handlePice = () =>{
     let ans=0;
     cart.map((product)=>(
@@ -11,6 +12,7 @@ const Cart = ({ cart, setCart,handleChange }) => {
     ))
     setPrice(ans)
   }
+
 
   useEffect(()=>{
     handlePice();
@@ -43,7 +45,7 @@ const Cart = ({ cart, setCart,handleChange }) => {
               <button onClick={()=>handleChange(product,-1)} className="plus-btn" type="button" name="button">
                 -
               </button>
-              <input type="text" name="name" value={product.amount} />
+              <span className="amount">{product.amount}</span>
               <button onClick={()=>handleChange(product,+1)} className="minus-btn" type="button" name="button">
                 +
               </button>

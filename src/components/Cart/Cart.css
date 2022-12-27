@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  .amount{
+    margin: 5px;
+  }
    
 
   .shopping-cart {
