@@ -52,7 +52,7 @@ if(isLoading){
 
 if(httpError){
   return <section className="error">
-  <p>{httpError}</p>
+  <p>{httpError}!</p>
 </section>
 }
 
